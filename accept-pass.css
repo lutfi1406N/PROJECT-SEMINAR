@@ -1,0 +1,131 @@
+/* Layout Dasar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #d7f7f1, #a5f0da);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Kontainer Utama */
+  .container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* SVG Checkmark Wrapper */
+  .checkmark-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+  }
+  
+  /* SVG Checkmark */
+  .checkmark {
+    width: 100%;
+    height: 100%;
+    stroke-width: 3;
+    stroke: #4db6ac;
+    stroke-miterlimit: 10;
+    fill: none;
+    animation: scaleIn 0.3s ease-in-out forwards;
+  }
+  
+  .checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    animation: strokeCircle 0.7s ease-in-out forwards;
+  }
+  
+  .checkmark-check {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: strokeCheck 0.5s 0.7s ease-in-out forwards;
+  }
+  
+  /* Judul & Paragraf */
+  h1 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 22px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Tombol */
+  .change-password {
+    background-color: #03b16e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .change-password:hover {
+    background-color: #028a59;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animasi */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes strokeCircle {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes strokeCheck {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  

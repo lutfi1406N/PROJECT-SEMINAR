@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #20b2aa;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ffc107; /* Warna garis underline */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    background-color: #ffde22;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d68203;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* jarak antara teks dan gambar */
+  }
+  
+  .hero h2 {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0 0;
+  }
+  
+  .circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px;
+}
+
+.card {
+    width: 200px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.view-more {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1cf5d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    max-width: 200px; /* membatasi lebar tombol */
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+
+.view-more:hover {
+    background-color: #02caa9;
+}
+
+.impact {
+    text-align: center;
+    margin: 60px 0;
+    padding: 0 20px;
+}
+
+.impact h2 {
+    font-size: 28px;
+    color: #20b2aa;
+    margin-bottom: 10px;
+}
+
+.impact h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .impact-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .impact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .impact-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .impact-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+.partners {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.partner-logos {
+    max-width: 90%;
+    height: auto;
+}
