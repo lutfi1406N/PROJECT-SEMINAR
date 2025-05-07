@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/accept-pass.css" />
   <link rel="stylesheet" href="css/konfirmasi.css" />
+
+
   <title>Kode Verifikasi</title>
+  <style>
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
+  <!-- Halaman Konfirmasi -->
   <div class="container">
     <h2>Kode Verifikasi</h2>
     <p>
@@ -19,8 +40,26 @@
       class="kode-input"
       placeholder="Masukkan kode verifikasi"
       maxlength="6"
+      id="kodeVerifikasi"
     />
-    <button class="confirm-button">KONFIRMASI</button>
+    <button class="confirm-button" onclick="verifikasiKode()">KONFIRMASI</button>
   </div>
+
+  <!-- Popup Verifikasi Berhasil -->
+  <div class="modal-overlay" id="successModal">
+    <div class="container">
+      <div class="checkmark-wrapper">
+        <svg class="checkmark" viewBox="0 0 52 52">
+          <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+          <path class="checkmark-check" fill="none" d="M14 27l8 8 16-16" />
+        </svg>
+      </div>
+      <h1>Verifikasi Berhasil!</h1>
+      <p>Email kamu telah berhasil diverifikasi.</p>
+      <button class="change-password" onclick="window.location.href='change-pass.html'">Ganti Password</button>
+    </div>
+  </div>
+
+  <script src="js/konfirmasi.js"></script>
 </body>
 </html>
