@@ -1,0 +1,89 @@
+/* Mengatur kontainer utama */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Styling untuk Card Detail Tanaman */
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  /* Styling gambar pada card */
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Gaya untuk header (nama tanaman) */
+  .header {
+    text-align: center;
+    font-size: 24px;
+    color: #2b7a78;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk body (deskripsi, video) */
+  .body {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling untuk video */
+  .card .body video {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Gaya tombol lebih banyak informasi */
+  .more-info {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3fb9a5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efek hover untuk tombol */
+  .more-info:hover {
+    background-color: #2b7a78;
+    transform: scale(1.03);
+  }
+  
+  /* Animasi untuk card */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

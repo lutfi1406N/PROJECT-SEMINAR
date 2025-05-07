@@ -84,4 +84,38 @@ body {
       transform: translateY(0);
     }
   }
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    padding: 10px 40px 10px 35px; /* Mengatur padding agar ikon tidak menutupi teks */
+  }
+  
+  .icon-lock {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .icon-eye {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
   

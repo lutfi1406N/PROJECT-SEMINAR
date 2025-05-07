@@ -48,12 +48,12 @@ nav ul li a::after {
     bottom: 0;
     height: 2px;
     width: 0%;
-    background-color: #ffc107; /* Warna garis underline */
+    background-color: #ebebeb; /* Warna garis underline */
     transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffc107;
+    color: #0fe9cc;
 }
 
 nav ul li a:hover::after {
@@ -62,7 +62,7 @@ nav ul li a:hover::after {
 
 
 .btn {
-    background-color: #ffde22;
+    background-color: #09eb8d;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
@@ -70,7 +70,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background-color: #d68203;
+    background-color: #fafafc;
 }
 
 .hero {
@@ -153,20 +153,20 @@ nav ul li a:hover::after {
 
 
 .view-more {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #1cf5d1;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    max-width: 200px; /* membatasi lebar tombol */
-    font-weight: bold;
-    font-size: 14px;
-  }
+  display: block;
+  margin: 20px auto; /* ini yang memposisikan ke tengah */
+  padding: 10px 20px;
+  background-color: #1cf5d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 14px;
+}
   
 
 .view-more:hover {
